@@ -1,11 +1,15 @@
 {
-    "name": "tenancy/framework",
+    "name": "vendor-patch/framework",
     "description": "Creating multi tenant saas from your Laravel app with ease",
     "keywords": ["laravel", "multi-tenant", "saas", "tenancy", "aws", "gce"],
     "license": "MIT",
     "require": {
         "laravel/framework": "*"
     },
+
+	"provide": {
+		"tenancy/framework": "*"
+	},        
     "autoload": {
         "psr-4": {
             "Tenancy\\": ""
